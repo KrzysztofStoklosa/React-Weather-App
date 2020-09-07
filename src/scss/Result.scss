@@ -1,0 +1,19 @@
+.result__container {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../assets/bg2.svg);
+
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+}
+.result__darkness {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/bg2.svg);
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  filter: brightness(0.5);
+}

@@ -1,0 +1,116 @@
+$background: rgb(255, 255, 255);
+$header_font: rgb(114, 126, 142);
+$city_name_font: rgb(57, 107, 174);
+.weather {
+  width: 75%;
+  margin: 5rem auto;
+  background-color: $background;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h6 {
+      font-size: 1.3rem;
+      color: $header_font;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  &__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    & h4 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 1.45rem;
+      color: $city_name_font;
+      margin-bottom: 2rem;
+    }
+    &_icon svg {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+}
+.content__left {
+  &_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &_temp span {
+      font-weight: 200;
+      font-size: 8rem;
+      color: rgb(74, 111, 161);
+      margin-left: 1.47rem;
+      line-height: 1;
+    }
+  }
+  & h6 {
+    font-size: 1.55rem;
+    text-align: left;
+    color: rgb(123, 152, 178);
+  }
+}
+
+.content__right {
+  display: flex;
+  flex-direction: column;
+  &_p,
+  &_p span {
+    font-size: 1.45rem;
+    color: rgb(74, 111, 161);
+  }
+  &_p span {
+    margin-left: 1rem;
+  }
+  &_maxmin {
+    display: flex;
+    flex-direction: row;
+    & svg {
+      fill: rgb(161, 185, 206);
+      margin-right: 1rem;
+    }
+    & svg_two svg {
+      margin-left: 4rem;
+    }
+    & span {
+      font-size: 1.6rem;
+      color: #3a86ca;
+    }
+  }
+  &_cell_container {
+    margin-top: 3rem;
+  }
+  &_humidity {
+    margin-bottom: 1rem;
+    & svg {
+      fill: rgb(161, 185, 206);
+    }
+    & span {
+      margin-left: 1.5rem;
+      font-size: 1.15rem;
+      color: rgb(135, 166, 211);
+    }
+  }
+}
+.svg_span {
+  display: block;
+  margin-left: 3.2rem;
+}
+.maxmin_container {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,15 @@
+.forcastDay__container {
+  display: flex;
+  align-items: center;
+  & h6 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(69, 129, 197);
+  }
+  &_temp span {
+    font-size: 1.3rem;
+    color: rgb(74, 111, 161);
+    width: 5rem;
+    text-align: center;
+  }
+}

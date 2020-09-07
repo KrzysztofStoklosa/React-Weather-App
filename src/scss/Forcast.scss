@@ -1,0 +1,21 @@
+$background: rgb(255, 255, 255);
+.forcast__wraper {
+  width: 75%;
+  margin: 5rem auto;
+  background-color: $background;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  opacity: 0.8;
+  & h6 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: rgb(114, 126, 142);
+    margin-top: 0;
+  }
+}
+.forcast__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

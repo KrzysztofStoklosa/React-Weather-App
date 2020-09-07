@@ -1,0 +1,9 @@
+$background: rgb(255, 255, 255);
+.graph__container {
+  width: 75%;
+  margin: 5rem auto;
+  background-color: $background;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+}
